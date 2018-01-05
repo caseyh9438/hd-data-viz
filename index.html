@@ -134,7 +134,16 @@
             {taxonomy: 'fb', name: 'win', label: "Youth Services",amount: 60, color: '#011c6b', //child 1.2
 
                 children: [ //child level 2
-                            {taxonomy:'fb', name:'job',label: "Counseling", amount: 20, color:'#3A5FCD'}, //child 1.2.1
+                            {taxonomy:'fb', name:'job',label: "Counseling", amount: 20, color:'#3A5FCD', //child 1.2.1
+                    children: [ //child level 3 - the following children belong to child 1.1.2
+
+                                                       {taxonomy:'fb', name:'job',label: "<a href='http://hdsa.org'>HDSA TELEHEALTH</a>", amount: 84, color:'#ababab'}, //child 1.1.2.1
+                                                       {taxonomy:'fb', name:'win',label: "Other Telehealth", amount: 69, color:'#ababab'}   //child 1.1.2.2
+
+                                                       ] }]
+
+
+            },
                             {taxonomy:'fb', name:'win',label: "Educational Videos", amount: 20, color:'#3A5FCD'}, //child 1.2.2
                             {taxonomy:'fb', name:'job',label: "Events", amount: 20, color:'#3A5FCD'}, //child 1.2.3
                             {taxonomy:'fb', name:'win',label: "Support Groups", amount: 20, color:'#3A5FCD'}, //child 1.2.4
