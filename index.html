@@ -148,7 +148,21 @@
 
                                                        ] }]
 
-             }
+             },
+            {taxonomy: 'fb', name: 'edu', label: "HD News",amount: 60, color: '#B9DBF4', //child 1.2
+
+                children: [ //child level 2
+
+                            {taxonomy:'fb', name:'job',label: "Y", amount: 13, color:'#02455f'}, //child 1.2.1
+                            {taxonomy:'fb', name:'win', label: "Z", amount: 30, color:'#7c3e71', //child 1.2.2
+
+                                            children: [ //child level 3 - the following children belong to child 1.2.2
+
+                                                       {taxonomy:'fb', name:'re',label: "ABC", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
+                                                       {taxonomy:'fb', name:'nore',label: "DEF", amount: 22, color:'#000'}  //child 1.2.2.2
+
+                                                       ] }]
+            }
         ]
     }
 
