@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Bubble Tree Setup Example ver. 06.10.2012</title>
+    <script type="text/javascript" src="bubbletree/lib/jquery-1.5.2.min.js"></script>
+    <script type="text/javascript" src="bubbletree/lib/jquery.history.js"></script>
+    <script type="text/javascript" src="bubbletree/lib/raphael.js"></script>
+    <script type="text/javascript" src="bubbletree/lib/vis4.js"></script>
+    <script type="text/javascript" src="bubbletree/lib/Tween.js"></script>
+    <script type="text/javascript" src="bubbletree/build1/bubbletree.js"></script>
+    <script type="text/javascript" src="bubbletree/styles/cofog.js"></script>
+    <link rel="stylesheet" type="text/css" href="bubbletree/build1/bubbletree.css" />
+    <script type="text/javascript">
+
+        $(function() {
+            new BubbleTree({
+                data: data,
+                container: '.bubbletree',
+                bubbleType: 'icon',
+                bubbleStyles: {
+                    'fb': {                                              //taxonomy
+                        'edu': {                                        //name of the node/child
+                            // color: '#9900cc',                       //color of the bubble if you like to set it here
+                            icon: 'bubbletree/styles/icons/azubi.svg' //icon url
+                        },
+                        'kar': {
+
+                            icon: 'bubbletree/styles/icons/karriere.svg'
+                        },
+                        'fb': {
+
+                            icon: 'bubbletree/styles/icons/fb.svg'
+                        },
+                        'job': {
+
+                            icon: 'bubbletree/styles/icons/job.svg'
+                        },
+                        'win': {
+
+                            icon: 'bubbletree/styles/icons/win.svg'
+                        },
+                        're': {
+
+                            icon: 'bubbletree/styles/icons/re.svg'
+                        },
+                        'nore': {
+
+                            icon: 'bubbletree/styles/icons/nore.svg'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+<script type="text/javascript">
+
+    var data = { //main node
+        taxonomy:'fb',
+        name: 'fb',
+        label: "Huntingdon's Disease Ecosystem Resources",
+        amount: 100,
+        color: '#119ce2',
+
+        children:[ //child level 1
+
+            {taxonomy:'fb', name:'kar', label: "Affected & At-Risk Resources",amount: 70, color: '#e74011', //child 1.1
+
+                children: [ //child level 2
+
+                            {taxonomy:'fb', name:'job',label: "Y", amount: 113, color:'#02455f'}, //child 1.1.1
+                            {taxonomy:'fb', name:'win', label: "Z", amount: 19, color:'#7c3e71',  //child 1.1.2
+
+                                            children: [ //child level 3 - the following children belong to child 1.1.2
+
+                                                       {taxonomy:'fb', name:'re',label: "ABC", amount: 84, color:'#A41ED1'}, //child 1.1.2.1
+                                                       {taxonomy:'fb', name:'nore',label: "DEF", amount: 69, color:'#000'}   //child 1.1.2.2
+
+                                                       ] }]
+
+            },
+
+            {taxonomy: 'fb', name: 'edu', label: "Caregiver Resources",amount: 30, color: '#c8b26d', //child 1.2
+
+                children: [ //child level 2
+
+                            {taxonomy:'fb', name:'job',label: "Y", amount: 13, color:'#02455f'}, //child 1.2.1
+                            {taxonomy:'fb', name:'win', label: "Z", amount: 30, color:'#7c3e71', //child 1.2.2
+
+                                            children: [ //child level 3 - the following children belong to child 1.2.2
+
+                                                       {taxonomy:'fb', name:'re',label: "ABC", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
+                                                       {taxonomy:'fb', name:'nore',label: "<a href='http://google.com'>Tester</a>", amount: 22, color:'#000'}  //child 1.2.2.2
+
+                                                       ] }]
+
+            },
+             {taxonomy: 'fb', name: 'edu', label: "HD Events",amount: 30, color: '#c8b26d', //child 1.2
+
+                children: [ //child level 2
+
+                            {taxonomy:'fb', name:'job',label: "Y", amount: 13, color:'#02455f'}, //child 1.2.1
+                            {taxonomy:'fb', name:'win', label: "Z", amount: 30, color:'#7c3e71', //child 1.2.2
+
+                                            children: [ //child level 3 - the following children belong to child 1.2.2
+
+                                                       {taxonomy:'fb', name:'re',label: "ABC", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
+                                                       {taxonomy:'fb', name:'nore',label: "DEF", amount: 22, color:'#000'}  //child 1.2.2.2
+
+                                                       ] }]
+
+            },
+            {taxonomy: 'fb', name: 'edu', label: "Researchers",amount: 9, color: '#c8b26d', //child 1.2
+
+                children: [ //child level 2
+
+                            {taxonomy:'fb', name:'job',label: "Funding Sources", amount: 13, color:'#02455f'}, //child 1.2.1
+                            {taxonomy:'fb', name:'win', label: "Sample Label", amount: 15, color:'#7c3e71', //child 1.2.2
+
+                                            children: [ //child level 3 - the following children belong to child 1.2.2
+
+                                                       {taxonomy:'fb', name:'re',label: "Sample Label", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
+                                                       {taxonomy:'fb', name:'nore',label: "Sample Label", amount: 22, color:'#000'}  //child 1.2.2.2
+
+                                                       ] }]
+
+            },
+            {taxonomy: 'fb', name: 'edu', label: "Youth Services",amount: 15, color: '#c8b26d', //child 1.2
+
+                children: [ //child level 2
+                            {taxonomy:'fb', name:'job',label: "Counseling", amount: 13, color:'#02455f', //child 1.2.1
+                            
+                                         children: [ //child level 3 - the following children belong to child 1.2.2
+                            
+                                                   {taxonomy:'fb', name:'re',label: "HDYO US Youth Services", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
+                                                   {taxonomy:'fb', name:'nore',label: "Color Crayon", amount: 22, color:'#000'}
+                                 
+
+                                                      ] }]     //child 1.2.2.2
+            },
+
+                            {taxonomy:'fb', name:'job',label: "Counseling", amount: 13, color:'#02455f'}, //child 1.2.1
+                            {taxonomy:'fb', name:'win',label: "Educational Videos", amount: 15, color:'#FFF68F'}, //child 1.2.2
+                            {taxonomy:'fb', name:'job',label: "Events", amount: 13, color:'#8ACE68'}, //child 1.2.3
+                            {taxonomy:'fb', name:'win',label: "Support Groups", amount: 15, color:'#8B1A1A'}, //child 1.2.4
+                            {taxonomy:'fb', name:'job',label: "Educational Games", amount: 13, color:'#B9DBF4'}, //child 1.2.5
+                            {taxonomy:'fb', name:'win',label: "Juvenile Huntington's Disease", amount: 15, color:'#8470FF'} //child 1.2.6
+
+                                                       
+
+                                                    
+            }
+
+
+        ]
+    }
+
+
+
+
+</script>
+
+
+<div class="bubbletree-wrapper">
+    <div class="bubbletree"></div>
+</div>
+</body>
+</html>
