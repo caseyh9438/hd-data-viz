@@ -1411,17 +1411,17 @@ BubbleTree.Bubbles.Plain = function(node, bubblechart, origin, radius, angle, co
 
 		//me.label.attr({ x: me.pos.x, y: me.pos.y, 'font-size': Math.max(4, me.bubbleRad * me.bc.bubbleScale * 0.25) });
 		if (!showLabel) {
-			me.label.hide();
+			me.label.show();
 			me.label2.show();
 		} else {
 			me.label.show();
-			if (r < 40) {
+			if (r < 70) {
 				me.label.find('.desc').hide();
 				me.label2.show();
 			} else {
 				// full label
 				me.label.find('.desc').show();
-				me.label2.hide();
+				me.label2.show();
 			}
 		}
 		

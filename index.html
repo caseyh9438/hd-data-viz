@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8"/>
-    <title>Bubble Tree Setup Example ver. 06.10.2012</title>
+    <title>Huntingdons Disease Ecosystem Map</title>
     <script type="text/javascript" src="bubbletree/lib/jquery-1.5.2.min.js"></script>
     <script type="text/javascript" src="bubbletree/lib/jquery.history.js"></script>
     <script type="text/javascript" src="bubbletree/lib/raphael.js"></script>
@@ -20,9 +20,9 @@
                 bubbleType: 'icon',
                 bubbleStyles: {
                     'fb': {                                              //taxonomy
-                        'edu': {                                        //name of the node/child
+                        'fb': {                                        //name of the node/child
                             // color: '#9900cc',                       //color of the bubble if you like to set it here
-                            icon: 'bubbletree/styles/icons/azubi.svg' //icon url
+                            icon: 'bubbletree/styles/icons/helix.svg' //icon url
                         },
                         'game': {
 
@@ -64,6 +64,14 @@
 
                             icon: 'bubbletree/styles/icons/kids.svg'
                         },
+                            'risky': {
+
+                            icon: 'bubbletree/styles/icons/risky.svg'
+                        },
+                              'news': {
+
+                            icon: 'bubbletree/styles/icons/news.svg'
+                        },
                         'jhd': {
                         
                             icon: 'bubbletree/styles/icons/jhd2.svg'
@@ -89,7 +97,7 @@
 
         children:[ //child level 1
 
-            {taxonomy:'fb', name:'event', label: "Affected & At-Risk Resources",amount: 60, color: '#011c6b', //child 1.1
+            {taxonomy:'fb', name:'risky', label: "Affected & At-Risk Resources",amount: 60, color: '#011c6b', //child 1.1
 
                 children: [ //child level 2
 
@@ -101,7 +109,7 @@
 
                                             children: [ //child level 3 - the following children belong to child 1.1.2
 
-                                                       {taxonomy:'fb', name:'win',label: "<a href='http://books.GOOGLE.COM'>hsdateleheal</a>", amount: 100, color:'#ababab'}, //child 1.1.2.1
+                                                       {taxonomy:'fb', name:'win',label: "<a href='http://books.GOOGLE.COM'>hsdatelehealth</a>", amount: 100, color:'#ababab'}, //child 1.1.2.1
                                                        {taxonomy:'fb', name:'win',label: "Other Telehealth", amount: 69, color:'#ababab'}   //child 1.1.2.2
 
                                                        ] }]
@@ -109,7 +117,7 @@
 
             },
 
-            {taxonomy: 'fb', name: 'care', label: "Caregiver Resources",amount: 60, color: '#011c6b', //child 1.2
+            {taxonomy: 'fb', name: 'care', label: "Caregiver Resources",amount: 60, color: '#ED8533', //child 1.2
 
                 children: [ //child level 2
 
@@ -124,7 +132,7 @@
                                                        ] }]
 
             },
-             {taxonomy: 'fb', name: 'event', label: "HD Events",amount: 60, color: '#011c6b', //child 1.2
+             {taxonomy: 'fb', name: 'event', label: "HD Events",amount: 60, color: '#6C9D38', //child 1.2
 
                 children: [ //child level 2
 
@@ -139,7 +147,7 @@
                                                        ] }]
 
             },
-            {taxonomy: 'fb', name: 'dna', label: "Researchers",amount: 60, color: '#011c6b', //child 1.2
+            {taxonomy: 'fb', name: 'dna', label: "Researchers",amount: 60, color: '#BD2828', //child 1.2
 
                 children: [ //child level 2
 
@@ -154,7 +162,7 @@
                                                        ] }]
 
             },
-            {taxonomy: 'fb', name: 'youth', label: "Youth Services",amount: 60, color: '#FFE17E', //child 1.2
+            {taxonomy: 'fb', name: 'youth', label: "Youth Services",amount: 60, color: '#896B31', //child 1.2
 
                 children: [ //child level 2
                             {taxonomy:'fb', name:'counseling',label: "Counseling", amount: 70, color:'#3A5FCD', //child 1.2.1
@@ -208,7 +216,7 @@
                                             
 
              },
-            {taxonomy: 'fb', name: 'win', label: "HD News",amount: 60, color: '#011c6b', //child 1.2
+            {taxonomy: 'fb', name: 'news', label: "HD News",amount: 60, color: '#612A8A', //child 1.2
 
                 children: [ //child level 2
 
