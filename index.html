@@ -19,38 +19,42 @@
                 container: '.bubbletree',
                 bubbleType: 'icon',
                 bubbleStyles: {
-                    'fb': {                                              //taxonomy
+                    'counseling': {                                              //taxonomy
                         'edu': {                                        //name of the node/child
                             // color: '#9900cc',                       //color of the bubble if you like to set it here
-                            icon: 'bubbletree/styles/icons/azubi.svg' //icon url
+                            icon: 'bubbletree/styles/icons/counseling.svg' //icon url
                         },
-                        'kar': {
+                        'game': {
 
-                            icon: 'bubbletree/styles/icons/karriere.svg'
+                            icon: 'bubbletree/styles/icons/educationalgames.svg'
                         },
-                        'fb': {
+                        'video': {
 
-                            icon: 'bubbletree/styles/icons/fb.svg'
+                            icon: 'bubbletree/styles/icons/educationalvideos.svg'
                         },
-                        'job': {
+                        'event': {
 
-                            icon: 'bubbletree/styles/icons/job.svg'
+                            icon: 'bubbletree/styles/icons/events.svg'
                         },
                         'win': {
 
                             icon: 'bubbletree/styles/icons/win.svg'
                         },
-                        're': {
+                        'forum': {
 
-                            icon: 'bubbletree/styles/icons/re.svg'
+                            icon: 'bubbletree/styles/icons/forum.svg'
+                        },
+                        'support': {
+
+                            icon: 'bubbletree/styles/icons/supportgroup.svg'
                         },
                         'youth': {
 
                             icon: 'bubbletree/styles/icons/youthservices.svg'
                         },
-                        'test': {
+                        'jhd': {
                         
-                            icon: 'bubbletree/styles/icons/supportgroup.svg'
+                            icon: 'bubbletree/styles/icons/jhdresources.svg'
                        }
                     }
                 }
@@ -141,21 +145,21 @@
             {taxonomy: 'fb', name: 'youth', label: "Youth Services",amount: 60, color: '#FFE17E', //child 1.2
 
                 children: [ //child level 2
-                            {taxonomy:'fb', name:'kar',label: "Counseling", amount: 70, color:'#3A5FCD', //child 1.2.1
+                            {taxonomy:'fb', name:'counseling',label: "Counseling", amount: 70, color:'#3A5FCD', //child 1.2.1
                     children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'test', label: 'HDYO US Youth Service', amount: 150, color:'#ababab'}, //child 1.2.1.1
                                                        {taxonomy:'fb', name:'win',label: "HDSA Counseling Service", amount: 150, color:'#ababab'}   //child 1.2.1.2
 
                                                        ]},
-                            {taxonomy:'fb', name:'win',label: "Educational Videos", amount: 70, color:'#3A5FCD', //child 1.2.2
+                            {taxonomy:'fb', name:'video',label: "Educational Videos", amount: 70, color:'#3A5FCD', //child 1.2.2
                     children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'test',label: 'HDYO Educational Videos', amount: 150, color:'#ababab'}, //child 1.2.1.1
                                                        {taxonomy:'fb', name:'win',label: "NYA Educational Videos", amount: 150, color:'#ababab'}   //child 1.2.1.2
 
                                                        ]},
-                            {taxonomy:'fb', name:'job',label: "Events", amount: 70, color:'#FFE17E', //child 1.2.3
+                            {taxonomy:'fb', name:'event',label: "Events", amount: 70, color:'#FFE17E', //child 1.2.3
                     children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'job',label: 'HDA Kids Camp England & Wales', amount: 150, color:'#ababab'}, //child 1.2.1.1
@@ -163,7 +167,7 @@
                                                        {taxonomy:'fb', name:'win',label: 'Scottish Huntingtons Association Summer Camp', amount: 150, color:'#ababab'},   //child 1.2.1.3
                                                        {taxonomy:'fb', name:'win',label: "<a href='https://help4hd.org'>Help4HD HIPE</a>", amount: 150, color:'#FFE17E'}   //child 1.2.1.3
                                                        ]},
-                            {taxonomy:'fb', name:'test',label: "Support Groups", amount: 70, color:'#3A5FCD', //child 1.2.4
+                            {taxonomy:'fb', name:'support',label: "Support Groups", amount: 70, color:'#3A5FCD', //child 1.2.4
                     children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'job',label: 'HDSA Youth Support', amount: 150, color:'#ababab'}, //child 1.2.1.1
@@ -171,14 +175,14 @@
                                                        {taxonomy:'fb', name:'win',label: 'Scottish Huntingtons Association Group Sessions', amount: 150, color:'#ababab'}   //child 1.2.1.2
 
                                                        ]},
-                            {taxonomy:'fb', name:'re',label: "Educational Games", amount: 70, color:'#3A5FCD', //child 1.2.5
+                            {taxonomy:'fb', name:'game',label: "Educational Games", amount: 70, color:'#3A5FCD', //child 1.2.5
                     children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'job',label: 'Huntingtons Outreach Project for Education at Stanford', amount: 150, color:'#ababab'}, //child 1.2.1.1
                                                        {taxonomy:'fb', name:'win',label: 'Other Educational Games', amount: 150, color:'#ababab'}   //child 1.2.1.2
 
                                                        ]},
-                            {taxonomy:'fb', name:'nore',label: "Juvenile Huntington's Disease", amount: 70, color:'#3A5FCD', //child 1.2.6
+                            {taxonomy:'fb', name:'jhd',label: "Juvenile Huntington's Disease", amount: 70, color:'#3A5FCD', //child 1.2.6
                              children: [ //child level 3 - the following children belong to child 1.2.1
 
                                                        {taxonomy:'fb', name:'job',label: 'Living with JHD', amount: 80, color:'#ababab'}, //child 1.2.1.1
