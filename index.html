@@ -191,13 +191,19 @@
 
                 children: [ //child level 2
 
-                            {taxonomy:'fb', name:'win',label: "Funding Sources", amount: 60, color:'#3A5FCD'}, //child 1.2.1
-                            {taxonomy:'fb', name:'win', label: "Sample Label", amount: 60, color:'#3A5FCD', //child 1.2.2
+                            {taxonomy:'fb', name:'win',label: "Funding Sources", amount: 60, color:'#3A5FCD', //child 1.2.1
+                    children: [ //child level 3 - the following children belong to child 1.2.1
+
+                                                       {taxonomy:'fb', name:'none', label: "<a href='http://bit.ly/2D8Pbbl'>HDF Grants</a>", amount: 150, color:'#ababab'}, //child 1.2.1.1
+                                                       {taxonomy:'fb', name:'none',label: "Only 1 So Far", amount: 10, color:'#ababab'}   //child 1.2.1.2
+
+                                                       ]},
+                            {taxonomy:'fb', name:'win', label: "Research Tools", amount: 60, color:'#3A5FCD', //child 1.2.2
 
                                             children: [ //child level 3 - the following children belong to child 1.2.2
 
-                                                       {taxonomy:'fb', name:'win',label: "Sample Label", amount: 20, color:'#A41ED1'}, //child 1.2.2.1
-                                                       {taxonomy:'fb', name:'win',label: "Sample Label", amount: 22, color:'#000'}  //child 1.2.2.2
+                                                       {taxonomy:'fb', name:'none',label: "<a href='http://bit.ly/2mplOpV'>Datasets</a>", amount: 150, color:'#ababab'}, //child 1.2.2.1
+                                                       {taxonomy:'fb', name:'none',label: "Only 1 So Far", amount: 10, color:'#ababab'}  //child 1.2.2.2
 
                                                        ] }]
 
