@@ -260,7 +260,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
 		var me = this, $c = me.$container, rt = me.treeRoot,
 			w = $c.width(), h = $c.height(),
 			paper = Raphael($c[0], w, h),
-			maxRad = Math.min(w, h) * 0.5 - 100,
+			maxRad = Math.min(w, h) * 0.5 - 40,
 			base, Vector = me.ns.Vector,
 			origin = new Vector(w * 0.5, h * 0.5); // center
 
@@ -277,7 +277,7 @@ var BubbleTree = function(config, onHover, onUnHover) {
 
 	me.onResize = function() {
 		var me = this, $c = me.$container, w = $c.width(), h = $c.height(),
-			maxRad = Math.min(w, h) * 0.5 - 100, base, rt = me.treeRoot, b, obj;
+			maxRad = Math.min(w, h) * 0.5 - 40, base, rt = me.treeRoot, b, obj;
 		me.paper.setSize(w, h);
 		me.origin.x = w * 0.5;
 		me.origin.y = h * 0.5;
